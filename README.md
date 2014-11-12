@@ -1,11 +1,11 @@
-isJs
+is.js
 ==
 
 JavaScript isser library. Node, AMD and browser support
 
 **No jQuery needed.**
 
-How to:
+Documentation:
 
 ####is.Object();
 ```javascript
