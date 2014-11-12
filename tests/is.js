@@ -9,9 +9,9 @@ exports['test isser framework'] = function(assert) {
     assert.equal(is.Date(new Date), true, 'Assert is.Date(new Date) should return true');
     assert.equal(is.RegExp(/a-z/), true, 'Assert is.RegExp(/a-z/) should return true');
     assert.equal(is.String('its a string! 1+1'), true, 'Assert is.String("its a string! 1+1") should return true');
-    assert.equal(is.Number(-1.2), true, 'Assert is.Boolean(true) should return true');
     assert.equal(is.Boolean(true), true, 'Assert is.Boolean(true) should return true');
     assert.equal(is.Boolean(false), true, 'Assert is.Boolean(false) should return true');
+    assert.equal(is.Float(1.2), true, 'Assert is.Float(1.2) should return true');
     assert.equal(is.Number(1.2), true, 'Assert is.Number(1.2) should return true');
     assert.equal(is.Number(-1.2), true, 'Assert is.Number(-1.2) should return true');
     assert.equal(is.Integer(1), true, 'Assert is.Integer(1) should return true');
