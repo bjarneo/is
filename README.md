@@ -7,6 +7,12 @@ JavaScript isser library. Node, AMD and browser support
 
 Documentation:
 
+####is.Array();
+```javascript
+is.Array(['a', 'b', 'c']);
+// Returns true
+```
+
 ####is.Object();
 ```javascript
 is.Object({ name: 'isJs' });
@@ -26,27 +32,21 @@ is.Undefined(test);
 // Returns true
 ```
 
-####is.Array();
-```javascript
-is.Array(['a', 'b', 'c']);
-// Returns true
-```
-
-####is.Date();
-```javascript
-is.Date(new Date);
-// Returns true
-```
-
-####is.RegExp();
-```javascript
-is.RegExp(/a-z/);
-// Returns true
-```
-
 ####is.String();
 ```javascript
 is.String('my string');
+// Returns true
+```
+
+####is.Empty();
+```javascript
+is.Empty({});
+// Returns true
+
+is.Empty([]);
+// Returns true
+
+is.Empty('');
 // Returns true
 ```
 
@@ -79,8 +79,19 @@ is.Integer(1.0);
 is.Float(1.1);
 // Returns true
 
-
 is.Float(-1.1);
+// Returns true
+```
+
+####is.Date();
+```javascript
+is.Date(new Date);
+// Returns true
+```
+
+####is.RegExp();
+```javascript
+is.RegExp(/a-z/);
 // Returns true
 ```
 

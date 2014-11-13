@@ -25,6 +25,22 @@
         };
     });
     
+    is.Empty = function (input) {
+        if (!input) {
+            return true;
+        }
+        
+        if (is.Object(input) && JSON.stringify(input) === '{}') {
+            return true;
+        }
+        
+        if (!input.length && !is.Undefined(input.length)) {
+            return true;
+        }
+        
+        return false;
+    };
+    
     is.Integer = function (integer) {
         return parseInt(integer) === integer;
     };

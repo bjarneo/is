@@ -20,6 +20,10 @@ exports['test isser framework'] = function(assert) {
     assert.equal(is.Integer('1'), false, 'Assert is.Integer("1") should return false');
     assert.equal(is.Integer([]), false, 'Assert is.Integer([]) should return false');
     assert.equal(is.Global(global), true, 'Assert is.Global(global) should return true');
+    assert.equal(is.Empty(''), true, 'Assert is.Empty("") should return true');
+    assert.equal(is.Empty([]), true, 'Assert is.Empty([]) should return true');
+    assert.equal(is.Empty({}), true, 'Assert is.Empty({}) should return true');
+    assert.equal(is.Empty({ a: 'test' }), false, 'Assert is.Empty({ a: "test" }) should return false');
 };
 
 if (module == require.main) {
