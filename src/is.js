@@ -26,15 +26,11 @@
     });
     
     is.Empty = function (input) {
-        if (!input) {
+        if (!input || (!input.length && !is.Undefined(input.length))) {
             return true;
         }
         
         if (is.Object(input) && JSON.stringify(input) === '{}') {
-            return true;
-        }
-        
-        if (!input.length && !is.Undefined(input.length)) {
             return true;
         }
         

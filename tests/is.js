@@ -1,6 +1,6 @@
 var is = require('./../src/is.js');
 
-exports['test isser framework'] = function(assert) {   
+exports['test isser framework'] = function (assert) {
     var test
     assert.equal(is.Object({}), true, 'Assert is.Object({}) should return true');
     assert.equal(is.Function(function() {}), true, 'Assert is.Function(function() {}) should return true');
