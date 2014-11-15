@@ -13,7 +13,6 @@
         'Undefined',
         'Null',
         'Array',
-        'Object',
         'Date',
         'RegExp',
         'String',
