@@ -83,6 +83,15 @@ is.Float(-1.1);
 // Returns true
 ```
 
+####is.Boolean();
+```javascript
+is.Boolean(true);
+// Returns true
+
+is.Boolean(false);
+// Returns true
+```
+
 ####is.Date();
 ```javascript
 is.Date(new Date);
