@@ -6,8 +6,22 @@
     'use strict';
     
     var is = {};
+    
+    function each(arr, fn) {
+        var len = arr.length, i = 0;
+        
+        if (!arr.length && arr instanceof Array) {
+            throw new TypeError('Check your array.');
+        } else if (typeof fn !== 'function') {
+            throw new TypeError('No callback function added.');
+        }
+        
+        for (; i < len; i++) {
+            fn.call(this, arr[i], i);
+        }
+    }
 
-    [
+    var methods = [
         'Object',
         'Function',
         'Undefined',
@@ -18,7 +32,9 @@
         'String',
         'Number',
         'Boolean'
-    ].forEach(function (method) {
+    ];
+    
+    each(methods, function (method) {
         is[method] = function (input) {
             return Object.prototype.toString.call(input) === '[object ' + method + ']';
         };
