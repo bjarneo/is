@@ -92,6 +92,12 @@ is.Boolean(false);
 // Returns true
 ```
 
+####is.Null();
+```javascript
+is.Null(null);
+// Returns true
+```
+
 ####is.Date();
 ```javascript
 is.Date(new Date);
