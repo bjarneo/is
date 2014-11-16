@@ -4,7 +4,7 @@
     "author": "Bjarne Øverli http://www.twitter.com/bjarneo_",
     "description": "JavaScript Isser library",
     "scripts": {
-        "test": "node tests/test.js"
+        "test": "node tests/is.js"
     },
     "devDependencies": {
         "test": ">=0.0.5",
