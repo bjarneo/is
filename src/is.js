@@ -5,8 +5,13 @@
 (function () {
     'use strict';
     
+    // Create our object
     var is = {};
     
+    // Hold our obj proto toString
+    var OBJ_TOSTR = Object.prototype.toString;
+    
+    // Create our own each function, since Array forEach does not support > ie9
     function each(arr, fn) {
         var len = arr.length, i = 0;
         
@@ -21,6 +26,7 @@
         }
     }
 
+    // Our methods to add to is object
     var methods = [
         'Object',
         'Function',
@@ -34,9 +40,10 @@
         'Boolean'
     ];
     
+    // Add our methods
     each(methods, function (method) {
         is[method] = function (input) {
-            return Object.prototype.toString.call(input) === '[object ' + method + ']';
+            return OBJ_TOSTR.call(input) === '[object ' + method + ']';
         };
     });
     
@@ -59,7 +66,7 @@
     };
     
     is.Global = function (input) {
-        if (Object.prototype.toString.call(input) === '[object global]') {
+        if (OBJ_TOSTR.call(input) === '[object global]') {
             return true;
         }
         
