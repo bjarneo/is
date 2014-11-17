@@ -56,6 +56,14 @@
         
         return false;
     };
+
+    is.Element = function (elem) {
+        if (elem && elem.nodeType === 1) {
+            return true;
+        }
+        
+        return false;
+    };
     
     is.Integer = function (integer) {
         return parseInt(integer) === integer;
