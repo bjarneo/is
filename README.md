@@ -98,6 +98,13 @@ is.Null(null);
 // Returns true
 ```
 
+####is.Element();
+```javascript
+var el = document.createElement('div');
+is.Element(el);
+// Returns true
+```
+
 ####is.Date();
 ```javascript
 is.Date(new Date);
