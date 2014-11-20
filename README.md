@@ -3,9 +3,14 @@ is.js
 
 JavaScript isser library. Node, AMD and browser support
 
-**No jQuery needed.**
+#Install:
+```bash
+git clone git@github.com:bjarneo/is.git
+//or
+npm install isdotjs
+```
 
-Documentation:
+##Documentation:
 
 ####is.Array();
 ```javascript
