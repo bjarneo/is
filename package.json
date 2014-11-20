@@ -1,8 +1,12 @@
 {
-    "name": "isJs",
-    "version": "1.0.0",
+    "name": "isdotjs",
+    "version": "1.0.1",
     "author": "Bjarne Øverli http://www.twitter.com/bjarneo_",
-    "description": "JavaScript Isser library",
+    "description": "JavaScript Isser library.",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/bjarneo/is.git"
+    },
     "scripts": {
         "test": "node tests/is.js"
     },
