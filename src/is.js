@@ -66,7 +66,7 @@
     };
     
     is.Integer = function (integer) {
-        return parseInt(integer) === integer;
+        return parseInt(integer, 10) === integer;
     };
     
     is.Float = function (number) {
