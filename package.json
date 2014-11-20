@@ -14,6 +14,7 @@
         "test": ">=0.0.5",
         "gulp": "*",
         "gulp-jshint": "*",
-        "gulp-uglify": "*"
+        "gulp-uglify": "*",
+        "gulp-concat": "*"
     }
 }
