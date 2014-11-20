@@ -9,7 +9,7 @@
     var is = {};
     
     // Hold our obj proto toString
-    var OBJ_TOSTR = Object.prototype.toString;
+    var ObjToString = Object.prototype.toString;
     
     // Create our own each function, since Array forEach does not support > ie9
     function each(arr, fn) {
@@ -43,7 +43,7 @@
     // Add our methods
     each(methods, function (method) {
         is[method] = function (input) {
-            return OBJ_TOSTR.call(input) === '[object ' + method + ']';
+            return ObjToString.call(input) === '[object ' + method + ']';
         };
     });
     
@@ -74,7 +74,7 @@
     };
     
     is.Global = function (input) {
-        if (OBJ_TOSTR.call(input) === '[object global]') {
+        if (ObjToString.call(input) === '[object global]') {
             return true;
         }
         
