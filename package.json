@@ -1,6 +1,6 @@
 {
     "name": "isdotjs",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": "Bjarne Øverli http://www.twitter.com/bjarneo_",
     "description": "JavaScript Isser library.",
     "repository": {
@@ -13,6 +13,7 @@
     "devDependencies": {
         "test": ">=0.0.5",
         "gulp": "*",
+        "jshint": "*",
         "gulp-jshint": "*",
         "gulp-uglify": "*",
         "gulp-concat": "*"
