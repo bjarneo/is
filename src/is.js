@@ -22,6 +22,7 @@
         }
 
         for (; i < len; i++) {
+            /*jshint validthis:true */
             fn.call(this, arr[i], i);
         }
     }
@@ -47,6 +48,7 @@
         };
     });
 
+    // Object, Array, String
     is.Empty = function (input) {
         if (!input || (!input.length && !is.Undefined(input.length))) {
             return true;
@@ -57,6 +59,7 @@
         return false;
     };
 
+    // Well, DOM element
     is.Element = function (elem) {
         if (elem && elem.nodeType === 1) {
             return true;
@@ -73,6 +76,7 @@
         return number === +number && number !== (number|0);
     };
 
+    // like window or global in nodejs
     is.Global = function (input) {
         if (ObjToString.call(input) === '[object global]') {
             return true;
