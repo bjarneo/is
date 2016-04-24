@@ -1,8 +1,27 @@
 {
     "name": "isdotjs",
-    "version": "1.0.4",
+    "version": "2.0.0",
     "author": "Bjarne Øverli http://www.twitter.com/bjarneo_",
     "description": "JavaScript Isser library.",
+    "keywords": [
+        "array",
+        "object",
+        "function",
+        "undefined",
+        "string",
+        "empty",
+        "number",
+        "integer",
+        "float",
+        "boolean",
+        "null",
+        "element",
+        "date",
+        "regex",
+        "global",
+        "is"
+    ],
+    "main": "src/is.js",
     "repository": {
         "type": "git",
         "url": "git://github.com/bjarneo/is.git"
