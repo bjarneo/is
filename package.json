@@ -31,7 +31,7 @@
         "url": "git://github.com/bjarneo/is.git"
     },
     "scripts": {
-        "prepublishOnly": "npm test && npm run build"
+        "prepublishOnly": "npm test && npm run build",
         "build": "microbundle build -o dist/ --sourcemap true --name is",
         "test": "node tests/is.js"
     },
