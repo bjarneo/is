@@ -1,6 +1,6 @@
 {
     "name": "isdotjs",
-    "version": "2.0.0",
+    "version": "3.0.0",
     "author": "Bjarne Øverli http://www.twitter.com/bjarneo_",
     "description": "JavaScript Isser library.",
     "keywords": [
@@ -21,21 +21,22 @@
         "global",
         "is"
     ],
-    "main": "src/is.js",
+    "main": "dist/isdotjs.js",
+    "umd:main": "dist/isdotjs.umd.js",
+    "module": "dist/isdotjs.m.js",
+    "source": "src/is.js",
     "types": "src/types.d.ts",
     "repository": {
         "type": "git",
         "url": "git://github.com/bjarneo/is.git"
     },
     "scripts": {
+        "prepublishOnly": "npm test && npm run build"
+        "build": "microbundle build -o dist/ --sourcemap true --name is",
         "test": "node tests/is.js"
     },
     "devDependencies": {
-        "test": ">=0.0.5",
-        "gulp": "*",
-        "jshint": "*",
-        "gulp-jshint": "*",
-        "gulp-uglify": "*",
-        "gulp-concat": "*"
+        "microbundle": "^0.11.0",
+        "test": ">=0.0.5"
     }
 }

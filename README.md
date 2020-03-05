@@ -3,47 +3,53 @@ is.js
 
 JavaScript isser library. Node, AMD and browser support
 
-#Install:
+# Install:
 ```bash
-git clone git@github.com:bjarneo/is.git
-//or
-npm install isdotjs
+npm i --save isdotjs
 ```
 
-##Documentation:
+## Documentation:
 
-####is.Array();
+### Imports
+```javascript
+import is from 'isdotjs';
+import is from 'isdotjs/dist/isdotjs.m'; // Module
+import is from 'isdotjs/dist/isdotjs.umd'; // UMD
+import is from 'isdotjs/dist/isdotjs'; // CJS
+```
+
+### is.Array();
 ```javascript
 is.Array(['a', 'b', 'c']);
 // Returns true
 ```
 
-####is.Object();
+### is.Object();
 ```javascript
 is.Object({ name: 'isJs' });
 // Returns true
 ```
 
-####is.Function();
+### is.Function();
 ```javascript
 is.Function(function() {});
 // Returns true
 ```
 
-####is.Undefined();
+### is.Undefined();
 ```javascript
 var test;
 is.Undefined(test);
 // Returns true
 ```
 
-####is.String();
+### is.String();
 ```javascript
 is.String('my string');
 // Returns true
 ```
 
-####is.Empty();
+### is.Empty();
 ```javascript
 is.Empty({});
 // Returns true
@@ -55,7 +61,7 @@ is.Empty('');
 // Returns true
 ```
 
-####is.Number();
+### is.Number();
 ```javascript
 is.Number(123);
 // Returns true
@@ -70,7 +76,7 @@ is.Number(-1.2);
 // Returns true
 ```
 
-####is.Integer();
+### is.Integer();
 ```javascript
 is.Integer(1);
 // Returns true
@@ -79,7 +85,7 @@ is.Integer(1.0);
 // Returns true
 ```
 
-####is.Float();
+### is.Float();
 ```javascript
 is.Float(1.1);
 // Returns true
@@ -88,7 +94,7 @@ is.Float(-1.1);
 // Returns true
 ```
 
-####is.Boolean();
+### is.Boolean();
 ```javascript
 is.Boolean(true);
 // Returns true
@@ -97,32 +103,32 @@ is.Boolean(false);
 // Returns true
 ```
 
-####is.Null();
+### is.Null();
 ```javascript
 is.Null(null);
 // Returns true
 ```
 
-####is.Element();
+### is.Element();
 ```javascript
 var el = document.createElement('div');
 is.Element(el);
 // Returns true
 ```
 
-####is.Date();
+### is.Date();
 ```javascript
 is.Date(new Date);
 // Returns true
 ```
 
-####is.RegExp();
+### is.RegExp();
 ```javascript
 is.RegExp(/a-z/);
 // Returns true
 ```
 
-####is.Global();
+### is.Global();
 ```javascript
 is.Global(window);
 // Returns true

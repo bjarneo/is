@@ -1,3 +1,4 @@
 *.komodoproject
 .komodotools/
 node_modules/
+dist/
