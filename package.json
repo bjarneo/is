@@ -22,6 +22,7 @@
         "is"
     ],
     "main": "src/is.js",
+    "types": "src/types.d.ts",
     "repository": {
         "type": "git",
         "url": "git://github.com/bjarneo/is.git"
